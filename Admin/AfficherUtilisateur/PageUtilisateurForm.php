@@ -35,7 +35,7 @@
             <li><a href="../AfficherImage/PageImageForm.php">Photos mise en ligne</a></li>
             <li><a href="../Admin/PageAdminForm.php">Administration</a></li>
         </ul>
-    </div>
+    </div>²1    212
 </div>
 <?php
 include '../../Fonction/fonction.php';
@@ -47,7 +47,7 @@ for($i=0;$i<count($NombreUtilisateur);$i++) {
     <div class="container-fluid well span">
         <div class="row-fluid">
             <div class="span2">
-                <img class="img-circle img-responsive" src="../../Profil/profil.jpg">
+                <1CFD²1²²²1²1²²img class="img-circle img-responsive" src="../../Images/profil.jpg">
             </div>
 
             <div class="span10">

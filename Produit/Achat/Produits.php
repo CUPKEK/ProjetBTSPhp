@@ -22,12 +22,18 @@
     </script>
     <?php
     include '../../Navbar/Navbar.php';
+    $idClient = $_SESSION['idclient'];
+    $_SESSION['idProduit'] = $idProduit = $_GET['idProduit'];
     returnUtilisateur($id);
-    $idProduit = $_GET['idProduit'];
+    $vousaimerezaussi = affichageProduit($idClient);
+    $idProduitPromo = $vousaimerezaussi[0]->idProduit;
     $accueil = affichageDescriptionProduit($idProduit);
     $donneeCli = affichageClient($id);
     $image = afficherImageParID($idProduit);
     $AffCli = affichageClienProduit($idProduit);
+    $_SESSION['idvendeur'] = $AffCli[0]->idclient;
+    $imagePromo = affichageImagePromo($idClient, $idProduitPromo);
+
     ?>
 
 </head>
@@ -70,11 +76,11 @@
                                     class="fa fa-bars"></i> Categories
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../../Index/Index%20Chaise/IndexChaise.php?Categorie=Chaise">Chaise</a>
-                            <a class="dropdown-item" href="../../Index/Index%20Meuble/IndexMeuble.php?Categorie=Meuble">Meuble</a>
-                            <a class="dropdown-item" href="../../Index/Index%20Electronique/IndexElectronique.php?Categorie=Electronique">Electronique</a>
-                            <a class="dropdown-item" href="../../Index/Index%20Jardin/IndexJardin.php?Categorie=Jardin">Jardin</a>
-                            <a class="dropdown-item" href="../../Index/Index%20Beauté/IndexBeaute.php?Categorie=Beaute">Beauté</a>
+                            <a class="dropdown-item" href="../../Index/IndexCategorie.php?Categorie=Chaise">Chaise</a>
+                            <a class="dropdown-item" href="../../Index/IndexCategorie.php?Categorie=Meuble">Meuble</a>
+                            <a class="dropdown-item" href="../../Index/IndexCategorie.php?Categorie=Electronique">Electronique</a>
+                            <a class="dropdown-item" href="../../Index/IndexCategorie.php?Categorie=Jardin">Jardin</a>
+                            <a class="dropdown-item" href="../../Index/IndexCategorie.php?Categorie=Beaute">Beauté</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +99,7 @@
                 <div class="col-lg-9-24 col-sm-12">
                     <div class="widgets-wrap float-right row no-gutters py-1">
                         <div class="col-auto">
-                            <a href="#" class="widget-header">
+                            <a href="../../Panier/Page%20Panier/PanierForm.php" class="widget-header">
                                 <div class="icontext">
                                     <div class="icon-wrap"><i class="text-warning icon-sm fa fa-shopping-cart"></i>
                                     </div>
@@ -117,7 +123,7 @@
                         <aside class="col-sm-6 border-right">
                             <article class="gallery-wrap">
                                 <div class="img-big-wrap">
-                                    <div> <a href="../../Produit/Ajout/Images%20Produit/uploads/<?=$image[0]->file_name;?>" data-fancybox="../../Produit/Ajout/Images%20Produit/uploads/<?=$image[0]->file_name;?>"><img src="../../Produit/Ajout/Images%20Produit/uploads/<?=$image[0]->file_name;?>"></a></div>
+                                    <div> <a href="../Produit/Ajout/Images%20Produit/uploads/<?=$image[0]->file_name;?>" data-fancybox="../../Produit/Ajout/Images%20Produit/uploads/<?=$image[0]->file_name;?>"><img src="../../Produit/Ajout/Images%20Produit/uploads/<?=$image[0]->file_name;?>"></a></div>
                                 </div>
                             </article>
                         </aside>
@@ -144,11 +150,11 @@
                                 <div class="row">
                                     <div class="col-sm-5">
                                         <dl class="dlist-inline">
-                                            <dt>Quantité: </dt>
+                                            <dt>Quantité en Stock: </dt>
                                             <dd>
                                                 <div class="section" style="padding-bottom:20px;">
                                                     <div>
-                                                        <input type="number" value="1" min="1" max="<?=$accueil[0]->StockProduit;?>" />
+                                                        <?=$accueil[0]->StockProduit;?>
                                                     </div>
                                                 </div>
                                             </dd>
@@ -159,12 +165,17 @@
                                 <a href="mailto:<?=$AffCli[0]->MailCli;?>" class="btn  btn-warning"> <i class="fa fa-envelope"></i>Contacter le vendeur</a>
                                 <?php
                                 if ($accueil[0]->PrixProduit>$donneeCli[0]->CreditCli){
-                                echo'<a href="#" class="btn  btn-outline-warning">Acheter crédit</a>';
+                                    ?>
+                                        <a href="../../Credit/Page%20Crédit/Page%20Crédit.php" class="btn  btn-outline-warning">Acheter crédit</a>';
+                                    <?php
                                 }
                                 else{
-                                    echo'<a href="#" class="btn  btn-outline-warning">Commander</a>';
+                                    ?>
+                                        <a class="btn  btn-outline-warning" href="../../Panier/Page%20Panier/PanierForm.php?action=ajout&amp;l=<?=$accueil[0]->NomProduit;?>&amp;q=1&amp;p=<?=$accueil[0]->PrixProduit;?>&amp;id=<?=$_SESSION['idProduit'];?>&amp;idclient='<?=$_SESSION['idvendeur'];?>'" onclick="window.open(this.href, '','toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=1000, height=600'); return false;">Ajouter au panier</a>
+                                    <?php
                                 }
                                 ?>
+
                             </article>
                         </aside>
                     </div>
@@ -180,7 +191,7 @@
                         <hr>
                         <?=$AffCli[0]->PaysCli;?>
                         <hr>
-                        <a href="">Visiter profile</a>
+                        <a href="../../Profil/Page%20Profil/ProfilForm.php?idclient='<?=$AffCli[0]->idclient;?>'">Visiter profile</a>
 
                     </div> <!-- card-body.// -->
                 </div> <!-- card.// -->
@@ -188,41 +199,25 @@
                     <div class="card-header">
                         Vous aimerez aussi
                     </div>
-                    <div class="card-body row">
-                        <div class="col-md-12 col-sm-3">
-                            <figure class="item border-bottom mb-3">
-                                <a href="#" class="img-wrap"> <img src="images/items/2.jpg" class="img-md"></a>
-                                <figcaption class="info-wrap">
-                                    <a href="#" class="title">The name of product</a>
-                                    <div class="price-wrap mb-3">
-                                        <span class="price-new">$280</span> <del class="price-old">$280</del>
-                                    </div> <!-- price-wrap.// -->
-                                </figcaption>
-                            </figure> <!-- card-product // -->
-                        </div> <!-- col.// -->
-                        <div class="col-md-12 col-sm-3">
-                            <figure class="item border-bottom mb-3">
-                                <a class="img-wrap"> <img src="images/items/3.jpg" class="img-md"></a>
-                                <figcaption class="info-wrap">
-                                    <a href="#" href="#" class="title">The name of product</a>
-                                    <div class="price-wrap mb-3">
-                                        <span class="price-new">$280</span>
-                                    </div> <!-- price-wrap.// -->
-                                </figcaption>
-                            </figure> <!-- card-product // -->
-                        </div> <!-- col.// -->
-                        <div class="col-md-12 col-sm-3">
-                            <figure class="item border-bottom mb-3">
-                                <a href="#" class="img-wrap"> <img src="images/items/4.jpg" class="img-md"></a>
-                                <figcaption class="info-wrap">
-                                    <a href="#" class="title">The name of product</a>
-                                    <div class="price-wrap mb-3">
-                                        <span class="price-new">$280</span>
-                                    </div> <!-- price-wrap.// -->
-                                </figcaption>
-                            </figure> <!-- card-product // -->
-                        </div> <!-- col.// -->
-                    </div> <!-- card-body.// -->
+                    <?php
+                    for($i=0;$i<1;$i++) {
+                        ?>
+                        <div class="card-body row">
+                            <div class="col-md-12 col-sm-3">
+                                <figure class="item border-bottom mb-3">
+                                    <a href="#" class="img-wrap"> <img src="../../Produit/Ajout/Images%20Produit/uploads/<?=$imagePromo[$i]->file_name;?>" class="img-md"></a>
+                                    <figcaption class="info-wrap">
+                                        <a href="#" class="title"><?=$vousaimerezaussi[$i]->NomProduit;?></a>
+                                        <div class="price-wrap mb-3">
+                                            <span class="price-new"><?=$vousaimerezaussi[$i]->PrixProduit;?></span>
+                                        </div> <!-- price-wrap.// -->
+                                    </figcaption>
+                                </figure> <!-- card-product // -->
+                            </div> <!-- col.// -->
+                        </div> <!-- card-body.// -->
+                        <?php
+                    }
+                    ?>
                 </div> <!-- card.// -->
             </aside> <!-- col // -->
         </div> <!-- row.// -->

@@ -22,8 +22,6 @@
     <?php
     include '../Navbar/navbar.php';
     returnUtilisateur($id);
-    $nombresProduit = countNombreProduit();
-    $typeProduit = affichagetypeProduit();
     $NomProduit = $_POST['Rechercher'];
     $affichageProduitRecherche = rechercherProduit($NomProduit);
     $accueil = affichageDescriptionProduit($affichageProduitRecherche[0]->idProduit);
@@ -71,18 +69,18 @@
                                 class="fa fa-bars"></i> Categories
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../Index/Index%20Chaise/IndexChaise.php?Categorie=Chaise">Chaise</a>
-                            <a class="dropdown-item" href="../Index/Index%20Meuble/IndexMeuble.php?Categorie=Meuble">Meuble</a>
-                            <a class="dropdown-item" href="../Index/Index%20Electronique/IndexElectronique.php?Categorie=Electronique">Electronique</a>
-                            <a class="dropdown-item" href="../Index/Index%20Jardin/IndexJardin.php?Categorie=Jardin">Jardin</a>
-                            <a class="dropdown-item" href="../Index/Index%20Beauté/IndexBeaute.php?Categorie=Beaute">Beauté</a>
+                            <a class="dropdown-item" href="../Index/IndexCategorie.php?Categorie=Chaise">Chaise</a>
+                            <a class="dropdown-item" href="../Index/IndexCategorie.php?Categorie=Meuble">Meuble</a>
+                            <a class="dropdown-item" href="../Index/IndexCategorie.php?Categorie=Electronique">Electronique</a>
+                            <a class="dropdown-item" href="../Index/IndexCategorie.php?Categorie=Jardin">Jardin</a>
+                            <a class="dropdown-item" href="../Index/IndexCategorie.php?Categorie=Beaute">Beauté</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-11-24 col-sm-8">
-                    <form action="../Index/Recherche.php" class="py-1">
+                    <form action="../Index/IndexRecherche.php" class="py-1">
                         <div class="input-group w-100">
-                            <input type="text" class="form-control" style="width:50%;" placeholder="Rechercher">
+                            <input type="text" id="Rechercher" name="Rechercher" class="form-control" style="width:50%;" placeholder="Rechercher">
                             <div class="input-group-append">
                                 <button class="btn btn-warning" type="submit">
                                     <i class="fa fa-search"></i> Rechercher
@@ -135,18 +133,9 @@
                 </div>
             </div>
 
-            <div class="padding-y-sm">
-            <span>
-                <?php
-
-                ?>
-            </span>
-            </div>
-
-
             <div class="row-sm">
                 <?php
-                for($i=0;$i<count($affichageProduit);$i++)
+                for($i=0;$i<count($accueil);$i++)
                 {
                     ?>
                     <div class="col-md-3 col-sm-6">
@@ -172,51 +161,41 @@
         <section class="footer-top padding-top">
             <div class="row">
                 <aside class="col-sm-3 col-md-3 white">
-                    <h5 class="title">Customer Services</h5>
+                    <h5 class="title">Service Client</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Money refund</a></li>
-                        <li><a href="#">Terms and Policy</a></li>
-                        <li><a href="#">Open dispute</a></li>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Remboursement</a></li>
+                        <li><a href="#">Termes et politique</a></li>
+                        <li><a href="#">Discution ouverte</a></li>
                     </ul>
                 </aside>
                 <aside class="col-sm-3  col-md-3 white">
-                    <h5 class="title">My Account</h5>
+                    <h5 class="title">A Propos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#"> User Login </a></li>
-                        <li><a href="#"> User register </a></li>
-                        <li><a href="#"> Account Setting </a></li>
-                        <li><a href="#"> My Orders </a></li>
-                        <li><a href="#"> My Wishlist </a></li>
-                    </ul>
-                </aside>
-                <aside class="col-sm-3  col-md-3 white">
-                    <h5 class="title">About</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#"> Our history </a></li>
-                        <li><a href="#"> How to buy </a></li>
-                        <li><a href="#"> Delivery and payment </a></li>
-                        <li><a href="#"> Advertice </a></li>
-                        <li><a href="#"> Partnership </a></li>
+                        <li><a href="#">Notre histoire</a></li>
+                        <li><a href="#">Comment acheter</a></li>
+                        <li><a href="#">Envoie et payement</a></li>
+                        <li><a href="#">Publicité</a></li>
+                        <li><a href="#">Partenaria</a></li>
                     </ul>
                 </aside>
                 <aside class="col-sm-3">
                     <article class="white">
-                        <h5 class="title">Contacts</h5>
+                        <h5 class="title">Contact</h5>
                         <p>
-                            <strong>Phone: </strong> +123456789 <br>
-                            <strong>Fax:</strong> +123456789
+                            <strong>Téléphone</strong>+33 6 01 25 15 10<br>
+                            <strong>Fax:</strong>+33 1 02 03 04 05
                         </p>
 
                         <div class="btn-group white">
                             <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i
-                                    class="fab fa-facebook-f  fa-fw"></i></a>
+                                        class="fab fa-facebook-f  fa-fw"></i></a>
                             <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i
-                                    class="fab fa-instagram  fa-fw"></i></a>
+                                        class="fab fa-instagram  fa-fw"></i></a>
                             <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i
-                                    class="fab fa-youtube  fa-fw"></i></a>
+                                        class="fab fa-youtube  fa-fw"></i></a>
                             <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i
-                                    class="fab fa-twitter  fa-fw"></i></a>
+                                        class="fab fa-twitter  fa-fw"></i></a>
                         </div>
                     </article>
                 </aside>

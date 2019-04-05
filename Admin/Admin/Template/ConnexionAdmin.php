@@ -1,12 +1,12 @@
 <?php
 
-include '../PHP/fonction.php';
-$UsernameCli = $_POST['UsernameCli'];
+include '../../../Fonction/fonction.php';
+$MailCli = $_POST['MailCli'];
 $MdpCli = $_POST['MdpCli'];
 
 $bdd = getDatabase();
-$req = $bdd->prepare('SELECT idclient, UsernameCli, MdpCli FROM client WHERE UsernameCli = :UsernameCli and admin = 1');
-$req->execute(array('UsernameCli' => $UsernameCli));
+$req = $bdd->prepare('SELECT idclient, MailCli, MdpCli FROM client WHERE MailCli = :MailCli and Admin = 1');
+$req->execute(array('MailCli' => $MailCli));
 
 $resultat = $req->fetch();
 
@@ -22,14 +22,13 @@ else {
         $_SESSION['MailCli'] = $MailCli;
         $_SESSION['MdpCli'] = $MdpCli;
         $_SESSION["Login"] = 1;
-        header('Location: ../Admin/PageAdminForm.php');
+        header('Location: ../../Admin/PageAdminForm.php');
 
     } else {
-        echo 'Vous devez être un Admin pour vous logger !';
+        echo 'Mauvaise adresse mail ou mot de passe !';
     }
 }
 ?>
-
 
 
 

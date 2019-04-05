@@ -19,7 +19,7 @@
                     <form role="form" class="form" action="Template/ConnexionAdmin.php" method="post">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Mail" name="UsernameCli" id="UsernameCli" autofocus="">
+                                <input class="form-control" placeholder="Mail" name="MailCli" id="MailCli" autofocus="">
                             </div>
                             <div class="form-group">
                                 <input class="form-control" placeholder="Password" name="MdpCli" id="MdpCli" type="password" value="">

@@ -1,0 +1,16 @@
+<?php
+
+include '../../Fonction/Fonction.php';
+$idclient = postVar("idclient");
+$NomCli = postVar("NomCli");
+$PrenomCli = postVar("PrenomCli");
+$MailCli = postVar("MailCli");
+$UsernameCli = postVar("UsernameCli");
+$NumeroCli = postVar("NumeroCli");
+$MdpCli = postVar("MdpCli");
+$CreditCli = 0;
+$admin = 0;
+$PaysCli = postVar("PaysCli");
+
+$id = addProfil($idclient, $NomCli, $PrenomCli, $MailCli, $UsernameCli, $NumeroCli, $MdpCli, $CreditCli, $admin, $PaysCli);
+error_log("Utilisateur ajouté avec l'identifiant ".$idclient);

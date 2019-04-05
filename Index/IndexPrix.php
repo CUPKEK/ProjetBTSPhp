@@ -20,14 +20,13 @@
     </script>
 
     <?php
-    include '../Navbar/navbar.php';
-    if(isset($id)){
-        returnUtilisateur($id);
-    }
-    $idClient = $_SESSION['idclient'];
-    $accueil = affichageProduit($idClient);
-    $image = affichageImage($idClient);
-    $typeProduit = affichagetypeProduit();
+    include '../Navbar/Navbar.php';
+    $PrixMin = $_POST['Min'];
+    $PrixMax = $_POST['Max'];
+    returnUtilisateur($id);
+    $accueil = affichageProduitParPrix($PrixMin, $PrixMax);
+    $image = affichageImage();
+    $nombresProduit = countNombreProduitPrix($PrixMin, $PrixMax);
     ?>
 <body>
     <header class="section-header">
@@ -41,12 +40,12 @@
 
                 <div class="collapse navbar-collapse" id="navbarTop">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown"><a href="../Credit/Page%20Crédit/Page%20Crédit.php" class="nav-link">Acheter</a>
+                        <li class="nav-item dropdown"><a href="../Index/Index.php" class="nav-link">Acheter</a>
                         </li>
                         <li class="nav-item dropdown"><a href="../Produit/Ajout/Ajout%20Produit/Page/Ajout%20Produit.php" class="nav-link">Vendre</a>
                         </li>
                         <?php if (isset($_SESSION['Login']) && $_SESSION['Login']==1): ?>
-                            <li class="nav-item dropdown"><a href="../Credit/Page%20Crédit/Page%20Crédit.php" class="nav-link"><?=$infoCredit[0]->CreditCli;?>Crédit</a>
+                            <li class="nav-item dropdown"><a href="../Credit" class="nav-link"><?=$infoCredit[0]->CreditCli;?>Crédit</a>
                             </li>
                             <li class="nav-item dropdown"><a href="../Fonction/Deconnexion.php" class="nav-link">Deconnexion</a>
                             </li>
@@ -108,7 +107,6 @@
             </div>
         </section>
     </header>
-
     <section class="section-content bg padding-y-sm">
         <div class="container">
             <div class="card">
@@ -117,46 +115,44 @@
                         <div class="col-md-3-24"> <strong>Filtrer par</strong> </div>
                         <div class="col-md-21-24">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><a href="Index%20Couleur/IndexCouleur.php">Couleur</a></li>
-                                <li class="list-inline-item"><a href="Index%20Marque/IndexMarque.php">Marque</a></li>
-                                <li class="list-inline-item"><a href="Index%20Poid/IndexPoid.php">Poid</a></li>
+                                <li class="list-inline-item"><a href="Index Couleur/IndexCouleur.php">Couleur</a></li>
+                                <li class="list-inline-item"><a href="Index Marque/IndexMarque.php">Marque</a></li>
+                                <li class="list-inline-item"><a href="Index Poid/IndexPoid.php">Poid</a></li>
                                 <li class="list-inline-item">
-                        <div class="form-inline">
-                            <form action='IndexPrix.php' method="POST">
-                                <input class="form-control form-control-sm" id="Min" name="Min" placeholder="Min" type="number">
-                            <span class="px-2"> - </span>
-                                 <input class="form-control form-control-sm" id="Max" name="Max" placeholder="Max" type="number">
-                                 <button type="submit" class="btn btn-sm ml-2">Ok</button>
-                            </form>
+                                    <div class="form-inline">
+                                        <form action='IndexPrix.php' method="POST">
+                                            <input class="form-control form-control-sm" id="Min" name="Min" placeholder="Min" type="number">
+                                            <span class="px-2"> - </span>
+                                            <input class="form-control form-control-sm" id="Max" name="Max" placeholder="Max" type="number">
+                                            <button type="submit" class="btn btn-sm ml-2">Ok</button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-
-
-        <div class="row-sm">
-            <?php
-            for($i=0;$i<count($accueil);$i++)
-            {
-            ?>
-            <div class="col-md-3 col-sm-6">
-                <figure class="card card-product">
-                    <div class="img-wrap"><img src="../Produit/Ajout/Images%20Produit/uploads/<?=$image[$i]->file_name;?>"></div>
-                    <figcaption class="info-wrap">
-                        <a href="../Produit/Achat/Produits.php?idProduit='<?=$accueil[$i]->idProduit;?>'" class="title"><?=$accueil[$i]->NomProduit;?></a>
-                        <div class="price-wrap">
-                            <span class="price-new"><?=$accueil[$i]->PrixProduit;?> Crédit</span>
+                <div class="row-sm">
+                    <?php
+                    for($i=0;$i<count($accueil);$i++)
+                    {
+                        ?>
+                        <div class="col-md-3 col-sm-6">
+                            <figure class="card card-product">
+                                <div class="img-wrap"><img src="../Produit/Ajout/Images%20Produit/uploads/<?=$image[$i]->file_name;?>"></div>
+                                <figcaption class="info-wrap">
+                                    <a href="../Produit/Achat/Produits.php?idProduit='<?=$accueil[$i]->idProduit;?>'" class="title"><?=$accueil[$i]->NomProduit;?></a>
+                                    <div class="price-wrap">
+                                        <span class="price-new"><?=$accueil[$i]->PrixProduit;?> Crédit</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </div>
-                    </figcaption>
-                </figure>
-            </div>
-                <?php
-            }
-            ?>
-        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
     </section>
 
 

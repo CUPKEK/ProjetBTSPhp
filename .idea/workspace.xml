@@ -1,65 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17e0c9a5-1ad8-4d55-a732-7beb8ea42839" name="Default Changelist" comment="" />
+    <list default="true" id="17e0c9a5-1ad8-4d55-a732-7beb8ea42839" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Credit/Checkout/Template/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Credit/Checkout/Template/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Credit/Template/Credit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/profil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Inscription/Page Inscription/Page Inscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Inscription/Template/Inscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Inscription/Template/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panier/Page Panier/PanierForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panier/Template/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profil/MonProfil.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profil/MonProfilForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profil/Page Profil/ProfilForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transaction/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Admin/ConnexionAdminForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Admin/ConnexionAdminForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Admin/Template/ConnexionAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Admin/Template/ConnexionAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/AfficherUtilisateur/PageUtilisateurForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/AfficherUtilisateur/PageUtilisateurForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonction/Deconnexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Fonction/Deconnexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonction/Fonction.php" beforeDir="false" afterPath="$PROJECT_DIR$/Fonction/Fonction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/Index Beauté/IndexBeaute.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index/IndexPrix.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/Index Chaise/IndexChaise.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index/Index Couleur/IndexCouleur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/Index Electronique/IndexElectronique.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index/Index Marque/IndexMarque.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/Index Jardin/IndexJardin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index/Index Poid/IndexPoid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/Index Meuble/IndexMeuble.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/IndexCouleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/Credit/Checkout/Page Checkout/Page Checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/IndexMarque.php" beforeDir="false" afterPath="$PROJECT_DIR$/Credit/Page Crédit/Page Crédit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/IndexPoid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index/IndexCategorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index/IndexRecherche.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index/IndexRecherche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Produit/Achat/Produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/Produit/Achat/Produits.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1844523426">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PHP" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PHP" value="6" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Fonction/Fonction.php">
+        <entry file="file://$PROJECT_DIR$/Admin/Admin/PageAdminForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="388" column="1" selection-start-line="388" selection-start-column="1" selection-end-line="388" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Produit/Achat/Produits.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="90" column="27" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="90" selection-end-column="27" />
+            <state relative-caret-position="454">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Index/Index.php">
+        <entry file="file://$PROJECT_DIR$/Admin/AfficherUtilisateur/PageUtilisateurForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+            <state relative-caret-position="219">
+              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>py-</find>
+      <find>image</find>
+      <find>Quantity</find>
+      <find>$idvendeur</find>
+      <find>var_d</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,19 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Connexion/Page Connexion/Connexion.php" />
-        <option value="$PROJECT_DIR$/Admin/Admin/PageAdminForm.php" />
-        <option value="$PROJECT_DIR$/Admin/Admin/ConnexionAdminForm.php" />
-        <option value="$PROJECT_DIR$/Admin/AfficherProduit/PageProduitForm.php" />
-        <option value="$PROJECT_DIR$/Admin/AfficherUtilisateur/PageUtilisateurForm.php" />
-        <option value="$PROJECT_DIR$/Fonction/Deconnexion.php" />
-        <option value="$PROJECT_DIR$/Connexion/Template/ConnexionPHP.php" />
-        <option value="$PROJECT_DIR$/Produit/Upload Images.php" />
-        <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Photo.php" />
-        <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Produit.php" />
-        <option value="$PROJECT_DIR$/Produit/Ajout/Upload Images.php" />
-        <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Ajout Produit.php" />
-        <option value="$PROJECT_DIR$/Produit/Produits.php" />
         <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Produits.php" />
         <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Template/Produits.php" />
         <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Photo/Ajout Photo.php" />
@@ -87,31 +105,57 @@
         <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Template/typeProduits.php" />
         <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Page/Ajout Produit.php" />
         <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Photo/Upload Images.php" />
-        <option value="$PROJECT_DIR$/Navbar/Navbar.php" />
         <option value="$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Page/Ajout typeProduit.php" />
-        <option value="$PROJECT_DIR$/Index/Index Beauté/IndexBeaute.php" />
-        <option value="$PROJECT_DIR$/Index/Index Chaise/IndexChaise.php" />
+        <option value="$PROJECT_DIR$/Index/Recherche.php" />
+        <option value="$PROJECT_DIR$/Index/IndexMarque.php" />
+        <option value="$PROJECT_DIR$/Index/IndexPoid.php" />
+        <option value="$PROJECT_DIR$/Index/IndexCouleur.php" />
+        <option value="$PROJECT_DIR$/Profil/Page Profil/ProfilForm.php" />
+        <option value="$PROJECT_DIR$/Panier/Template/Panier.php" />
+        <option value="$PROJECT_DIR$/Index/Index Prix/IndexPrix.php" />
         <option value="$PROJECT_DIR$/Index/Index Electronique/IndexElectronique.php" />
         <option value="$PROJECT_DIR$/Index/Index Jardin/IndexJardin.php" />
         <option value="$PROJECT_DIR$/Index/Index Meuble/IndexMeuble.php" />
-        <option value="$PROJECT_DIR$/Index/Recherche.php" />
-        <option value="$PROJECT_DIR$/Produit/Achat/Produits.php" />
-        <option value="$PROJECT_DIR$/Fonction/Fonction.php" />
+        <option value="$PROJECT_DIR$/Index/Index Beauté/IndexBeaute.php" />
+        <option value="$PROJECT_DIR$/Index/Index Chaise/IndexChaise.php" />
+        <option value="$PROJECT_DIR$/Inscription/Template/css.css" />
+        <option value="$PROJECT_DIR$/Inscription/Page Inscription/Page Inscription.php" />
+        <option value="$PROJECT_DIR$/Inscription/Template/Inscription.php" />
+        <option value="$PROJECT_DIR$/Index/IndexCategorie.php" />
+        <option value="$PROJECT_DIR$/Index/Index Marque/IndexMarque.php" />
         <option value="$PROJECT_DIR$/Index/IndexRecherche.php" />
+        <option value="$PROJECT_DIR$/Index/IndexPrix.php" />
+        <option value="$PROJECT_DIR$/Index/Index Poid/IndexPoid.php" />
+        <option value="$PROJECT_DIR$/Index/Index Couleur/IndexCouleur.php" />
+        <option value="$PROJECT_DIR$/Credit/Template/crédit.css" />
+        <option value="$PROJECT_DIR$/Credit/Template/Credit.js" />
+        <option value="$PROJECT_DIR$/Credit/Template/Credit.css" />
+        <option value="$PROJECT_DIR$/Credit/Checkout/Template/css.css" />
+        <option value="$PROJECT_DIR$/Credit/Checkout/Template/js.js" />
+        <option value="$PROJECT_DIR$/Credit/Page Crédit/Page Crédit.php" />
+        <option value="$PROJECT_DIR$/Credit/Checkout/Page Checkout/Page Checkout.php" />
+        <option value="$PROJECT_DIR$/Fonction/Deconnexion.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/Panier/Page Panier/test.php" />
+        <option value="$PROJECT_DIR$/Panier/Template/css.css" />
+        <option value="$PROJECT_DIR$/Navbar/Navbar.php" />
+        <option value="$PROJECT_DIR$/Connexion/Template/ConnexionPHP.php" />
+        <option value="$PROJECT_DIR$/trigger.sql" />
+        <option value="$PROJECT_DIR$/Transaction/Transaction.php" />
+        <option value="$PROJECT_DIR$/Panier/Page Panier/PanierForm.php" />
         <option value="$PROJECT_DIR$/Index/Index.php" />
+        <option value="$PROJECT_DIR$/Fonction/Fonction.php" />
+        <option value="$PROJECT_DIR$/Produit/Achat/Produits.php" />
+        <option value="$PROJECT_DIR$/Admin/Admin/ConnexionAdminForm.php" />
+        <option value="$PROJECT_DIR$/Admin/Admin/Template/ConnexionAdmin.php" />
+        <option value="$PROJECT_DIR$/Admin/AfficherUtilisateur/PageUtilisateurForm.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -128,18 +172,29 @@
             <path>
               <item name="ProjetMeuble" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetMeuble" type="462c0819:PsiDirectoryNode" />
-              <item name="Index" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjetMeuble" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetMeuble" type="462c0819:PsiDirectoryNode" />
-              <item name="Produit" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="AfficherUtilisateur" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjetMeuble" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetMeuble" type="462c0819:PsiDirectoryNode" />
-              <item name="Produit" type="462c0819:PsiDirectoryNode" />
-              <item name="Achat" type="462c0819:PsiDirectoryNode" />
+              <item name="Connexion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetMeuble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetMeuble" type="462c0819:PsiDirectoryNode" />
+              <item name="Connexion" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetMeuble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetMeuble" type="462c0819:PsiDirectoryNode" />
+              <item name="Credit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,26 +204,30 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dierussischenfrauen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Projet Chaise" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\ProjetMeuble\Produit\Ajout\Ajout Produit\Template" />
-      <recent name="C:\wamp64\www\ProjetMeuble\Produit\Ajout\Ajout Produit" />
-      <recent name="C:\wamp64\www\ProjetMeuble\Produit\Ajout\Ajout Produit\Page" />
-      <recent name="C:\wamp64\www\ProjetMeuble\Produit\Ajout\Ajout Photo" />
-      <recent name="C:\wamp64\www\ProjetMeuble\Produit\Ajout" />
+      <recent name="C:\wamp64\www\ProjetMeuble\Panier\Page Panier" />
+      <recent name="C:\wamp64\www\ProjetMeuble\Index" />
+      <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Poid" />
+      <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Marque" />
+      <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Couleur" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ProjetMeuble\Inscription\Template" />
+      <recent name="C:\wamp64\www\ProjetMeuble\Index" />
+      <recent name="C:\wamp64\www\ProjetMeuble\Profil" />
       <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Meuble" />
       <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Jardin" />
-      <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Electronique" />
-      <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Chaise" />
-      <recent name="C:\wamp64\www\ProjetMeuble\Index\Index Beauté" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -206,18 +265,79 @@
       <workItem from="1548190502054" duration="2354000" />
       <workItem from="1548232365980" duration="35000" />
       <workItem from="1548278604593" duration="110000" />
-      <workItem from="1548406787752" duration="255000" />
+      <workItem from="1548406787752" duration="1908000" />
+      <workItem from="1548598734120" duration="3170000" />
+      <workItem from="1548615181311" duration="200000" />
+      <workItem from="1548621621432" duration="4394000" />
+      <workItem from="1548664381305" duration="13000" />
+      <workItem from="1548679861447" duration="1947000" />
+      <workItem from="1548688333948" duration="9000" />
+      <workItem from="1548707657659" duration="3730000" />
+      <workItem from="1548750910608" duration="3137000" />
+      <workItem from="1548765041414" duration="6601000" />
+      <workItem from="1548775853466" duration="1484000" />
+      <workItem from="1548843991113" duration="553000" />
+      <workItem from="1548862283038" duration="316000" />
+      <workItem from="1548862618160" duration="3430000" />
+      <workItem from="1549015767459" duration="411000" />
+      <workItem from="1549017696626" duration="3648000" />
+      <workItem from="1549356049523" duration="2830000" />
+      <workItem from="1549445414303" duration="1146000" />
+      <workItem from="1549875444886" duration="6867000" />
+      <workItem from="1549885099563" duration="8154000" />
+      <workItem from="1549960509787" duration="1478000" />
+      <workItem from="1549980824268" duration="2335000" />
+      <workItem from="1550050619844" duration="5784000" />
+      <workItem from="1550139729688" duration="757000" />
+      <workItem from="1550221710121" duration="857000" />
+      <workItem from="1550498134765" duration="1900000" />
+      <workItem from="1551092928216" duration="1153000" />
+      <workItem from="1551111467240" duration="861000" />
+      <workItem from="1551190076761" duration="159000" />
+      <workItem from="1551685476769" duration="3331000" />
+      <workItem from="1551703428160" duration="1176000" />
+      <workItem from="1551865680617" duration="4645000" />
+      <workItem from="1551871186432" duration="3174000" />
+      <workItem from="1552039918576" duration="2730000" />
+      <workItem from="1552055075381" duration="2676000" />
+      <workItem from="1552301881193" duration="2253000" />
+      <workItem from="1552379137074" duration="4971000" />
+      <workItem from="1552935990455" duration="711000" />
+      <workItem from="1553586138735" duration="6159000" />
+      <workItem from="1553672512196" duration="9072000" />
+      <workItem from="1554113605588" duration="4328000" />
+      <workItem from="1554233111070" duration="2447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43349000" />
+    <option name="totallyTimeSpent" value="161626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16308725" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19597316" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32872927" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16107382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -230,28 +350,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14026846" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -262,97 +361,27 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Fonction/Fonction.php</url>
-          <line>282</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Bootstrap/bootstrap-reboot.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Index/Recherche.php" />
+    <entry file="file://$PROJECT_DIR$/Images/Meuble.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bootstrap/bootstrap.bundle.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Images/profil.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Admin/Template/admin.css">
+    <entry file="file://$PROJECT_DIR$/Profil/Template/Profil.css" />
+    <entry file="file://$PROJECT_DIR$/Profil/MonProfilForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Admin/Template/ConnexionAdmin.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/AfficherUtilisateur/Template/PageSupprimerUtilisateur.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Admin/PageAdminForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/Admin/ConnexionAdminForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
+        <state relative-caret-position="-765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin/AfficherImage/PageImageForm.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/AfficherProduit/PageProduitForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1303">
-          <caret line="80" column="9" lean-forward="true" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/bootstrap.bundle.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugins/fancybox/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fonts/fontawesome/css/fa-solid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Connexion/Template/ConnexionPHP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Connexion/Page Connexion/Connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Template/CSS.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Index/Index Couleur/IndexBeaute.php" />
+    <entry file="file://$PROJECT_DIR$/Index/Index Marque/IndexBeaute.php" />
+    <entry file="file://$PROJECT_DIR$/Index/Index Poid/IndexBeaute.php" />
+    <entry file="file://$PROJECT_DIR$/Panier/Template/Panier.php" />
     <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Template/Produits.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -360,31 +389,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Template/typeProduits.php">
+    <entry file="file://$PROJECT_DIR$/Index/Index Jardin/IndexJardin.php" />
+    <entry file="file://$PROJECT_DIR$/Index/Index Meuble/IndexMeuble.php" />
+    <entry file="file://$PROJECT_DIR$/Index/Index Beauté/IndexBeaute.php" />
+    <entry file="file://$PROJECT_DIR$/Index/Index Chaise/IndexChaise.php" />
+    <entry file="file://$PROJECT_DIR$/Index/Index Electronique/IndexElectronique.php" />
+    <entry file="file://$PROJECT_DIR$/Inscription/Template/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        <state relative-caret-position="493">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Photo/Ajout Photo.php">
+    <entry file="file://$PROJECT_DIR$/Index/Index Marque/IndexMarque.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        <state relative-caret-position="221">
+          <caret line="13" column="30" selection-end-line="210" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Photo/Upload Images.php">
+    <entry file="file://$PROJECT_DIR$/Index/IndexRecherche.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="221">
+          <caret line="133" column="18" lean-forward="true" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/AfficherUtilisateur/PageUtilisateurForm.php">
+    <entry file="file://$PROJECT_DIR$/Index/IndexPrix.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+        <state relative-caret-position="368">
+          <caret line="133" column="22" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index/Index Poid/IndexPoid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-343">
+          <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit/Template/Credit.js" />
+    <entry file="file://$PROJECT_DIR$/Connexion/Template/ConnexionCSS.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit/Template/Credit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit/Checkout/Template/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit/Checkout/Template/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit/Page Crédit/Page Crédit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="81" selection-start-line="88" selection-start-column="81" selection-end-line="88" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index/IndexCategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credit/Checkout/Page Checkout/Page Checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index/Index Couleur/IndexCouleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fonction/Deconnexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Panier/Template/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Panier/Page Panier/test.php" />
+    <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Page/Ajout Produit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="126" column="38" lean-forward="true" selection-start-line="126" selection-start-column="38" selection-end-line="126" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Transaction/MerceDeVotreAchat.php" />
+    <entry file="file://$PROJECT_DIR$/Inscription/Page Inscription/Page Inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Inscription/Template/Inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -395,89 +526,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc" />
-    <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Page/Ajout typeProduit.php">
+    <entry file="file://$PROJECT_DIR$/Profil/Page Profil/ProfilForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        <state>
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Index/Index Beauté/IndexBeaute.php">
+    <entry file="file://$PROJECT_DIR$/Panier/Page Panier/PanierForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index/Index Chaise/IndexChaise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index/Index Meuble/IndexMeuble.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index/Index Electronique/IndexElectronique.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index/Index Jardin/IndexJardin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fonction/Deconnexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index/Recherche.php" />
-    <entry file="file://$PROJECT_DIR$/Produit/Ajout/Ajout Produit/Page/Ajout Produit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="92" selection-start-line="117" selection-start-column="59" selection-end-line="117" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index/IndexRecherche.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="153" column="90" selection-start-line="153" selection-start-column="90" selection-end-line="153" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fonction/Fonction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="388" column="1" selection-start-line="388" selection-start-column="1" selection-end-line="388" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Produit/Achat/Produits.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="90" column="27" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="90" selection-end-column="27" />
+        <state relative-caret-position="409">
+          <caret line="240" column="27" lean-forward="true" selection-start-line="240" selection-start-column="27" selection-end-line="240" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Index/Index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Connexion/Page Connexion/Connexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Produit/Achat/Produits.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Transaction/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fonction/Fonction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="187" column="1" lean-forward="true" selection-start-line="187" selection-start-column="1" selection-end-line="187" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trigger.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="146" column="5" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Admin/Template/ConnexionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Admin/ConnexionAdminForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="21" column="105" selection-start-line="21" selection-start-column="105" selection-end-line="21" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Connexion/Template/ConnexionPHP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/Admin/PageAdminForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/AfficherUtilisateur/PageUtilisateurForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
         </state>
       </provider>
     </entry>
