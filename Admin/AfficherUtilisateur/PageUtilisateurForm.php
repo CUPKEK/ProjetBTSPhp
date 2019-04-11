@@ -32,10 +32,8 @@
             <li class="active"><a href="../Admin/PageAdminForm.php">Home</a></li>
             <li><a href="../AfficherUtilisateur/PageUtilisateurForm.php">Profil Utilisateur</a></li>
             <li><a href="../AfficherProduit/PageProduitForm.php">Produits en vente</a></li>
-            <li><a href="../AfficherImage/PageImageForm.php">Photos mise en ligne</a></li>
-            <li><a href="../Admin/PageAdminForm.php">Administration</a></li>
         </ul>
-    </div>²1    212
+    </div>
 </div>
 <?php
 include '../../Fonction/fonction.php';
@@ -47,7 +45,7 @@ for($i=0;$i<count($NombreUtilisateur);$i++) {
     <div class="container-fluid well span">
         <div class="row-fluid">
             <div class="span2">
-                <1CFD²1²²²1²1²²img class="img-circle img-responsive" src="../../Images/profil.jpg">
+                <img class="img-circle img-responsive" src="../../Images/profil.jpg">
             </div>
 
             <div class="span10">
@@ -61,8 +59,8 @@ for($i=0;$i<count($NombreUtilisateur);$i++) {
 
             <div class="span">
                 <div class="btn-group ">
-                    <a class="btn btn-info">Modifier</a>
-                    <a class="btn btn-danger" href="Template/PageSupprimerUtilisateur.php?idclient='<?=$profil[$i]->idclient;?>'">Supprimer</a>
+                    <a class="btn btn-info" href="Template/Modifier/PageModifierUtilisateur.php?idclient=<?=$profil[$i]->idclient;?>">Modifier</a>
+                    <a class="btn btn-danger" href="Template/Supprimer/SupprimerUtilisateur.php?idclient='<?=$profil[$i]->idclient;?>'">Supprimer</a>
                 </div>
             </div>
         </div>

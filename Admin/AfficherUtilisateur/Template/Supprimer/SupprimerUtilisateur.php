@@ -1,8 +1,8 @@
 <?php
-include '../../PHP/fonction.php';
+include '../../../../Fonction/Fonction.php';
 $idclient = $_GET['idclient'];
 supprimerClientProduit($idclient);
 supprimerClientClient($idclient);
 supprimerClientImage($idclient);
-header("location:../AfficherUtilisateur/PageUtilisateurForm");
+header("location:../PageUtilisateurForm");
 ?>

@@ -28,15 +28,13 @@
             <li class="active"><a href="../Admin/PageAdminForm.php">Home</a></li>
             <li><a href="../AfficherUtilisateur/PageUtilisateurForm.php">Profil Utilisateur</a></li>
             <li><a href="../AfficherProduit/PageProduitForm.php">Produits en vente</a></li>
-            <li><a href="../AfficherImage/PageImageForm.php">Photos mise en ligne</a></li>
-            <li><a href="../Admin/PageAdminForm.php">Administration</a></li>
         </ul>
     </div>
-</div>x
+</div>
 <?php
 include '../../Fonction/fonction.php';
-$produit = affichageProduit();
-$image = affichageImage();
+$produit = affichageProduitAdmin();
+$image = affichageImageAdmin();
 $NombreProduit = returnNombreProduit();
 for($i=0;$i<count($NombreProduit);$i++) {
     ?>
@@ -46,7 +44,7 @@ for($i=0;$i<count($NombreProduit);$i++) {
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
                         <h4 class="text-center"><span class="label label-info">PRODUIT</span></h4>
-                        <img src="../../PageAjoutProduit/uploads/<?=$image[$i]->file_name;?>" class="img-responsive">
+                        <img src="../../Produit/Ajout/Images%20Produit/uploads/<?=$image[$i]->file_name;?>" class="img-responsive">
                         <div class="caption">
                             <div class="row">
                                 <div class="col-md-6 col-xs-6">
@@ -54,19 +52,19 @@ for($i=0;$i<count($NombreProduit);$i++) {
                                 </div>
                                 <div class="col-md-6 col-xs-6 price">
                                     <h3>
-                                        <label><?=$produit[$i]->PrixVenteProduit;?>  Crédit</label></h3>
+                                        <label><?=$produit[$i]->PrixProduit;?>  Crédit</label></h3>
                                 </div>
                             </div>
                             <p><?=$produit[$i]->DescriptionProduit;?></p>
                             <p></p>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a class="btn btn-info">
+                                    <a class="btn btn-info" href="Template/Modifier/PageModifierProduit.php?idProduit=<?=$produit[$i]->idProduit;?>">
                                         Modifier
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <a class="btn btn-danger" href="Template/SupprimerProduit.php?idProduit='<?=$produit[$i]->idProduit;?>'">
+                                    <a class="btn btn-danger" href="Template/Supprimer/SupprimerProduit.php?idProduit=<?=$produit[$i]->idProduit;?>">
                                         Supprimer
                                     </a>
                                 </div>

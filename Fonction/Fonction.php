@@ -38,6 +38,38 @@ function addProfil($idclient, $NomClient, $PrenomClient, $MailClient, $UsernameC
 
 }
 
+function ModifierProfil($idclient, $NomClient, $PrenomCli, $MailClient, $UsernameClient, $NumeroCli, $MdpClient, $CreditCli, $admin, $PaysCli)
+{
+    $db = getDatabase();
+    $sql="UPDATE client SET Nomcli = '$NomClient', PrenomCli = '$PrenomCli', MailCli = '$MailClient', UsernameCli = '$UsernameClient', NumeroCli = '$NumeroCli', MdpCli = '$MdpClient', CreditCli = '$CreditCli', Admin = '$admin', PaysCli = '$PaysCli' WHERE idclient = $idclient";
+    var_dump($sql);
+    $insert=$db->prepare($sql);
+    $insert->execute();
+    header('location: ../../../../Admin/AfficherUtilisateur/PageUtilisateurForm.php');
+    return $db->lastInsertId();
+}
+
+function ModifierProduit($idProduit, $PrixProduit, $StockProduit, $PoidProduit, $NomProduit, $DescriptionProduit, $CouleurProduit, $idclient)
+{
+    $db = getDatabase();
+    $sql="UPDATE produit SET PrixProduit = '$PrixProduit', StockProduit = '$StockProduit', PoidProduit = '$PoidProduit', NomProduit = '$NomProduit', DescriptionProduit = '$DescriptionProduit', CouleurProduit = '$CouleurProduit' WHERE idProduit = '$idProduit'";
+    var_dump($sql);
+    $insert=$db->prepare($sql);
+    $insert->execute();
+    header('location: ../../../../Admin/AfficherProduit/PageProduitForm.php');
+    return $db->lastInsertId();
+}
+
+function ModifierProduitMarque($idProduit, $Categorie, $Marque)
+{
+    $db = getDatabase();
+    $sql="UPDATE typeproduit SET Categorie = '$Categorie', Marque = '$Marque' WHERE idtypeProduit = $idProduit";
+    var_dump($sql);
+    $insert=$db->prepare($sql);
+    $insert->execute();
+    return $db->lastInsertId();
+}
+
 function postVar($name){
     if(isset($_POST[$name])){
         if(!empty($_POST[$name])){
@@ -236,6 +268,22 @@ function affichagetypeProduit(){
     return $chaise;
 }
 
+function affichageProduitAdmin(){
+    $bdd = null;
+
+    if ($bdd == null) {
+        $bdd = getDataBase();
+    }
+    if ($bdd) {
+        $stmt = $bdd->prepare("SELECT * FROM produit WHERE StockProduit > 0  ORDER BY idProduit ASC ");
+        if ($stmt->execute()) {
+            $chaise = $stmt->fetchAll(PDO::FETCH_OBJ);
+            $stmt->closeCursor();
+        }
+    }
+    return $chaise;
+}
+
 function affichageProduit($idClient){
     $bdd = null;
 
@@ -260,6 +308,22 @@ function affichageStockProduit($idProduit){
     }
     if ($bdd) {
         $stmt = $bdd->prepare("SELECT StockProduit FROM produit WHERE idProduit = $idProduit ");
+        if ($stmt->execute()) {
+            $chaise = $stmt->fetchAll(PDO::FETCH_OBJ);
+            $stmt->closeCursor();
+        }
+    }
+    return $chaise;
+}
+
+function afficherClientProduitAdmin($idProduit){
+    $bdd = null;
+
+    if ($bdd == null) {
+        $bdd = getDataBase();
+    }
+    if ($bdd) {
+        $stmt = $bdd->prepare("SELECT idclient FROM produit WHERE idProduit = $idProduit");
         if ($stmt->execute()) {
             $chaise = $stmt->fetchAll(PDO::FETCH_OBJ);
             $stmt->closeCursor();
@@ -447,6 +511,23 @@ function affichageClienProduit($idProduit){
         }
     }
     return $affCli;
+}
+
+function affichageImageAdmin(){
+    $bdd = null;
+
+    if ($bdd == null) {
+        $bdd = getDataBase();
+    }
+
+    if ($bdd) {
+        $resultat = $bdd->prepare("SELECT file_name FROM images, produit WHERE produit.idProduit = images.idProduit and produit.StockProduit > 0");
+        if ($resultat->execute()) {
+            $images = $resultat->fetchAll(PDO::FETCH_OBJ);
+            $resultat->closeCursor();
+        }
+    }
+    return $images;
 }
 
 function affichageImage($idClient){
@@ -681,6 +762,22 @@ function supprimerProduit($idProduit){
         }
     }
 }
+
+function supprimerImages($idProduit){
+    $bdd = null;
+
+    if ($bdd == null) {
+        $bdd = getDataBase();
+    }
+
+    if ($bdd) {
+        $resultat = $bdd->prepare("DELETE FROM images WHERE idProduit = $idProduit");
+        if ($resultat->execute()) {
+            $resultat->closeCursor();
+        }
+    }
+}
+
 
 ///
 ///         Fonction Panier

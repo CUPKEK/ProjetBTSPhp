@@ -28,8 +28,6 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="../../Admin/AfficherUtilisateur/PageUtilisateurForm.php">Profil Utilisateur</a></li>
             <li><a href="../../Admin/AfficherProduit/PageProduitForm.php">Produits en vente</a></li>
-            <li><a href="../../Admin/AfficherImage/PageImageForm.php">Photos mise en ligne</a></li>
-            <li><a href="../../Admin/Admin/PageAdminForm.php">Administration</a></li>
         </ul>
     </div>
 </div>

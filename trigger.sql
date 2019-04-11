@@ -154,6 +154,14 @@ AS
 
 
 
+CREATE TRIGGER date_inscription AFTER INSERT
+ON  client FOR EACH ROW
+BEGIN
+    INSERT INTO client (dateAjout) VALUES (NOW());
+    END
+
+
+
 
 BEGIN TRANSACTION Achat
 UPDATE client set CreditCli = CreditCli - $PrixProduit * $StockProduit
@@ -161,3 +169,12 @@ WHERE idclient = $_SESSION['idclient']
 
 UPDATE client set CreditCli = CreditCli + $PrixProduit * $StockProduit
 WHERE idclient = produit.idclient AND idProduit = $idProduit
+
+
+DELIMITER |
+CREATE PROCEDURE compter_nombre_produit_vendu_semaine ()
+BEGIN
+    SELECT COUNT(*) FROM hisstorique_produit
+    WHERE dateDelete >= NOW() - 7;
+END |
+DELIMITER ;
